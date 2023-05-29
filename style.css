@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+*::selection{
+    background-color: aliceblue;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+
+html::-webkit-scrollbar-track{
+    background-color: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: aliceblue;
+}
+
+body{
+    background: #fff;
+    overflow: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+.btn{
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background-color: aliceblue;
+    color: darkgray;
+}
+
+.heading{
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 0.5rem solid aliceblue;
+    color: #1a1a1a;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid aliceblue;
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color: #fff;
+    margin: 1rem;
+}
+
+header .user .post{
+    font-size: 2rem;
+    color: #eee;
+}
+
+header .navbar{
+    width: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+    color: darkgray;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background: aliceblue;
+}
+
+.home{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.home h1{
+    font-size: 5rem;
+    margin: 1rem 0;
+    color: #1a1a1a;
+}
+
+.home p{
+    font-size: 2rem;
+    color: darkgray;
+    padding: 1rem 0;
+}
+
+.about{
+    padding-left: 6rem;
+}
+.about .row{
+    display: grid;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+}
+.about .row .info p{
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.about .row .container{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    display: flex;
+    gap: 1rem;
+    object-fit: cover;
+    border: #1a1a1a; 
+} 
+
+.about .row .container .box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    border: 0.1rem solid #1a1a1a;
+} 
+.about .row .tech-skills{
+     font-size: 2rem;
+} 
+
+.container .box img{
+    height: 10rem;
+    overflow: hidden;
+}
+
+
+.blogs .blog-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.blogs .blog-container {
+    margin: 1rem;
+}
+
+.blogs .blog-container .bog{
+    padding: 1rem;
+    border: 0.1rem solid #1a1a1a;
+}
+.blogs .blog-container img{
+    height: 20rem;
+    width: 100%;
+    object-fit: fill;
+}
+
+.blogs .blog-container .bog .blog-content h2{
+    font-size: 2.5rem;
+
+}
+
+.blogs .blog-container .bog .blog-content p{
+    font-size: 1.5rem;
+
+}
