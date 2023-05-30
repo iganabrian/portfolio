@@ -169,19 +169,14 @@ header .navbar ul li a:hover{
 }
 
 .about .row .container{
-    flex: 1 1 48rem;
-    padding: 2rem 1rem;
-    display: flex;
-    gap: 1rem;
-    object-fit: cover;
-    border: #1a1a1a; 
-} 
-
-.about .row .container .box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 1rem;
-    border: 0.1rem solid #1a1a1a;
+    padding: 1rem 40px;
+    font-size: 1.8rem;
 } 
 .about .row .tech-skills{
      font-size: 2rem;
